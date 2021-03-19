@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Sales Training | I. Janvey &amp; Sons</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Indie+Flower|Nunito+Sans|PT+Serif:400,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Initialize page to show Connectivity by default
+            $('#blink').hide();
+            $('#ddi-inform').hide();
+            $('#sales-i').hide();
+            $('#connectivity').show();
+
+            // Show and Hide each section based on the link clicked
+            $('.section2').click(function() {
+                $('#blink').hide();
+                $('#ddi-inform').show();
+                $('#sales-i').hide();
+                $('#connectivity').hide();
+            });
+
+            $('.section3').click(function() {
+                $('#blink').hide();
+                $('#ddi-inform').hide();
+                $('#sales-i').show();
+                $('#connectivity').hide();
+            });
+
+            $('.section4').click(function() {
+                $('#blink').show();
+                $('#ddi-inform').hide();
+                $('#sales-i').hide();
+                $('#connectivity').hide();
+            });
+
+            $('.section1').click(function() {
+                $('#blink').hide();
+                $('#ddi-inform').hide();
+                $('#sales-i').hide();
+                $('#connectivity').show();
+            });
+        });
+
+    </script>
+    <!-- Single Page Document for I.Janvey Sales Reps Training -->
+    <!-- Wiki style page with disappearing and reappearing sections without ever reloading the page -->
+</head>
+
+<body>
+    <header class="header">
+        <!-- Header with Janvey logo and H1 -->
+        <a href="#"><img src="images/logo45x45.png" alt="Janvey Logo" /></a>
+        <h1>Resources &amp; Documentation</h1>
+        <div class="hamburger-nav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+            <ul>
+                <li class="section1"><a href="#connectivity">Connect</a></li>
+                <li class="section2"><a href="#ddi-inform">DDI</a></li>
+                <li class="section3"><a href="#sales-i">Sales-i</a></li>
+                <li class="section4"><a href="#blink">Blink</a></li>
+            </ul>
+        </div>
+    </header>
+    <nav class="mobile-nav">
+        <!-- Navigation will sit under header with links to anchors on the page when viewed on a smaller device -->
+        <ul>
+            <li class="section1"><a href="#connectivity">Connect</a></li>
+            <li class="section2"><a href="#ddi-inform">DDI</a></li>
+            <li class="section3"><a href="#sales-i">Sales-i</a></li>
+            <li class="section4"><a href="#blink">Blink</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Begin with UL with links to other ID elements -->
+        <div class="container toc">
+            <section class="table-of-contents section1">
+                <h2><a href="#connectivity">Connectivity to Corporate Resources</a></h2>
+                <ul>
+                    <li><a href="#connectivity" id="nav1">VPN for Access to Janvey Server</a>
+                        <ul>
+                            <li><a href="#connect-google-auth" id="nav2">Google Authenticator Token</a></li>
+                            <li><a href="#connect-log-in-server" id="nav3">Logging Into Server with Employee Credentials</a></li>
+                            <li><a href="#connect-log-in-ddi" id="nav4">Logging Into DDI Inform</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#connect-sales-i" id="nav5">Sales-i - Business Intelligence/CRM</a>
+                        <ul>
+                            <li><a href="#connect-sales-i-connect" id="nav6">Laptop and Mobile Connectivity</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#connect-blink" id="nav7">Blink - Employee Intranet</a>
+                        <ul>
+                            <li><a href="#connect-blink-hub" id="nav8">Access To Hub</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="table-of-contents section2">
+                <h2><a href="#ddi-inform">DDI Inform</a></h2>
+                <ul>
+                    <li><a href="#ddi-calendar" id="nav9">Calendar</a></li>
+                    <li><a href="#ddi-sales-order" id="nav10">Sales Order &amp; Quote Entry</a>
+                        <ul>
+                            <li><a href="#ddi-order-pad" id="nav11">Customer Order Pad</a></li>
+                            <li><a href="#ddi-price-method" id="nav12">Price Methods</a>
+                                <ul>
+                                    <li><a href="#ddi-price-contracts" id="nav13">Contracts</a></li>
+                                    <li><a href="#ddi-price-formula" id="nav14">Formula Mark-Ups</a></li>
+                                    <li><a href="#ddi-price-dev" id="nav15">Deviated Pricing</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#ddi-inventory" id="nav16">Inventory</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#ddi-dashboard" id="nav17">Salesperson Dashboard</a>
+                        <ul>
+                            <li><a href="#ddi-dash-quote" id="nav18">Quote Follow-Up (Pipeline)</a></li>
+                            <li><a href="#ddi-dash-backorder" id="nav19">Backorder Follow-Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="table-of-contents section3">
+                <h2><a href="#sales-i">Sales-i</a></h2>
+                <ul>
+                    <li><a href="#sales-i-crm" id="nav20">CRM</a></li>
+                    <li><a href="#sales-i-tracker" id="nav21">Goal Tracker</a></li>
+                    <li><a href="#sales-i-review" id="nav22">Business Review</a></li>
+                    <li><a href="#sales-i-gap" id="nav23">Gap Analysis</a></li>
+                </ul>
+            </section>
+            <section class="table-of-contents section4">
+                <h2><a href="#blink">Blink</a></h2>
+                <ul>
+                    <li><a href="#blink-doc" id="nav24">Document Repository</a></li>
+                    <li><a href="#blink-support" id="nav25">DSR Support</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container">
+            <section class="info-section" id="connectivity">
+                <h1 class="section-headers" id="connectivity">Connectivity</h1>
+                <h2 class="main-headers">VPN for Access to Janvey Server</h2>
+                <p>In order to access DDi Inform, our corporate <a href="https://en.wikipedia.org/wiki/Enterprise_resource_planning" target="_blank">ERP System</a>, you must connect to a trusted network. Our <a href="https://en.wikipedia.org/wiki/Virtual_private_network" target="_blank">Virtual Private Network</a> will allow you to access valuable resources on our server.</p><br>
+
+                <a href="./pdf/Janvey%20VPN%20Setup%20File%20Share.pdf" target="_blank">Please read the documentation</a> &#40;also located in the Blink document hub&#41; for connecting to the VPN<br>
+                <hr>
+                <h3 class="secondary-headers" id="connect-google-auth">Google Authenticator Token</h3>
+                <img src="images/google-authenticator150x150.png" alt="Google Authenticator" />
+                <p>It is highly recommended you use the authenticator on your mobile device. Use the links below for your device:</p>
+                <a href="https://apps.apple.com/us/app/google-authenticator/id388497605" target="_blank">Google Authenticator for iOS (iPhone)</a><br>
+                <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en_us" target="_blank">Google Authenticator for Android</a>
+                <br>
+                <hr>
+                <h3 class="secondary-headers" id="connect-log-in-server">Logging Into Server</h3>
+
+                <!-- TO DO -->
+
+                <p>After successfully connecting to the VPN, we need to download the DDI Application to the remote computer. <br>
+                    <a href="https://drive.google.com/file/d/1pcpAsmnAlsUJDKTAeLnfUNrc_w8bnFUW/view?usp=sharing" target="_blank">DDI Application for Windows</a><br>Download and extract the .zip file to the C:\Program Files (x86) folder. If you navigate to this folder, you should find the application under the \DDI SYSTEM\inForm\bin folder. <img src="images/server_login_extract.PNG" alt="Windows Explorer" /><br>
+                    Right-click on the DDI inForm application file and "Add to Taskbar" for easy access.<br>
+                    <br>
+                    There is still some additional configuration to be done. <br>
+                    Click on the DDI icon. Click on "Connection Update". Fill out the configuration screen:<br>
+                    <img src="images/server_login_connection.PNG" alt="DDI Configuration" /><br>
+                    The 'Windows User Password' is: <strong>/0626inform</strong><br>
+                    At this point, you should be able to launch DDI Inform and connect using your credentials. If you have any problems, please contact support, via Blink.
+                </p>
+                <hr>
+                <h3 class="secondary-headers" id="connect-log-in-ddi">Logging Into DDI Inform</h3>
+                <p>Once logged into the server, launch Inform by double-clicking on the icon <img src="images/ddi_logo.PNG" alt="DDI Logo" id="ddi-logo" /><br>You will be prompted with a login<br><img src="images/ddi_login.PNG" alt="DDI Login" id="ddi-login-image" /><br>Use the credentials assigned to you &#40;case sensitive&#41;. Please only have one Inform session open at a time - we have a strict amount of licenses available.</p><br>
+                <hr>
+                <h2 class="main-headers" id="connect-sales-i">Sales-i</h2>
+                <p>Sales-i is our business intelligence and CRM tool. The software allows you to query historical sales data as well as log sales activities into it's built-in calendar. Sales-i is a cloud application and is not connected to our on-premises server. It can be accessed remotely from any computer.</p>
+                <hr>
+                <h3 class="secondary-headers" id="connect-sales-i-connect">Laptop and Mobile Connectivity</h3>
+                <p>The URL for Sales-i : <a href="https://us2.sales-i.com" target="_blank">https://us2.sales-i.com</a><br>
+                    <img src="images/sales-i_login.PNG" alt="Sales-i Login" /><br>
+                    <a href="https://apps.apple.com/us/app/sales-i/id394448836" target="_blank">Download the app for Apple iOS</a><br>
+                    <a href="https://play.google.com/store/apps/details?id=com.salesi.mobile&hl=en" target="_blank">Download the app for Android</a></p>
+                <hr>
+                <h2 class="main-headers" id="connect-blink">Blink - Employee Intranet</h2>
+                <p>Please download Blink:<br/><br/>
+                    <a href="https://app.joinblink.com/#/login" target="_blank" />Blink Download</a><br/><br/>
+                    Enter your <strong>&#64;janvey.com</strong> email address and you will receive a confirmation code needed to complete the download.<br> Make sure to download the desktop application:<br><br>
+                    <img src="images/blink_download.PNG" alt="Blink Download" /><br>
+                    Blink will be our primary mode of internal communication. Blink offers robust functionality as well as added layers of security to protect our most sensitive communications.</p>
+                <hr>
+                <h3 class="secondary-headers" id="connect-blink-hub">The Hub</h3>
+                <p>The Blink Hub functions as our document repository. All customer/vendor contract files will reside here as well as any pertinent corporate documentation. You can access the Hub on the left side of the navigation pane<br>
+                    <img src="images/blink_hub.PNG" alt="Blink Hub" />
+                    <br>
+                    Please contact <a href="mailto:webmaster@janvey.com" alt="Mail Webmaster at Janvey dot com">webmaster@janvey.com</a> for any issues relating to access and availability to the Blink Hub.</p>
+                <hr>
+
+            </section>
+            <section class="info-section" id="ddi-inform">
+                <h1 class="section-headers" id="ddi-inform">DDi Inform</h1>
+                <p>Before continuing on, please download and review the official <a href="http://www.ddisys.com/attachments/Inform-Training-Guide.pdf" target="_blank">DDI training documentation.</a> The rest of the materials in this section will assume basic knowledge about the system and the sales modules.</p>
+                <h2 class="main-headers" id="ddi-calendar">Calendar</h2>
+                <p>The use of the DDI calendar may be used for both personal and professional scheduling, but keep in mind that this is not a private calendar. Any user may view and/or change the events on any other calendar. Any event placed on this calendar should be considered public knowledge. For example, the event titled "Doctor's Appointment" is perfectly fine, whereas specific information about the nature of the appointment <em>should be avoided.</em><img src="images/ddi_calendar.PNG" alt="DDI Calendar" /></p>
+                <hr>
+                <h2 class="main-headers" id="ddi-sales-order">Sales Order &amp; Quote Entry</h2>
+                <p>The process for Sales Order and Quote entry are nearly identical. When producing a quote for a customer, the system will apply a mark-up automatically (dependant on what category of customer it is). If you would like to quote a different price from the suggested, you should use a new feature that allows you to create a temporary "Price Contract": <br/>
+                <img src="images/quote_entry.PNG" alt="Quote Screen" />
+                By checking the "Price Contract" box and supplying an expiration date, the system will refer to this new price until the quote expires. This is useful because we don't want to neccesarily guarantee pricing for longer than our cost is guaranteed for. This is a great way to automate profit margin management. Both the "Ship Via" and "Ship Date" fields will automatically populate and do not need to be manipulated.</p>
+                <hr>
+                <h3 class="secondary-headers" id="ddi-order-pad">Customer Order Pad</h3>
+                <p>In imperdiet urna ac justo facilisis, in porttitor mauris tempus. Vivamus purus augue, hendrerit sit amet massa id, venenatis pharetra lectus. Mauris et tincidunt nisl. Etiam id tortor justo. Cras facilisis lorem non feugiat placerat. Donec volutpat gravida dapibus. Maecenas venenatis nisi ac dictum viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam a eleifend elit. Sed ut mauris porttitor libero dapibus faucibus eget at lacus.</p>
+                <hr>
+                <h3 class="secondary-headers" id="ddi-price-methods">Price Methods</h3>
+                <p>In imperdiet urna ac justo facilisis, in porttitor mauris tempus. Vivamus purus augue, hendrerit sit amet massa id, venenatis pharetra lectus. Mauris et tincidunt nisl. Etiam id tortor justo. Cras facilisis lorem non feugiat placerat. Donec volutpat gravida dapibus.</p>
+                <hr>
+                <h4 class="tertiary-headers" id="ddi-price-contracts">Contracts</h4>
+                <p>In hac habitasse platea dictumst. Suspendisse tempor blandit libero, at rhoncus leo dapibus in. Etiam semper, erat ac vehicula vulputate, magna nisi rhoncus orci, sed congue massa lectus id risus. In sagittis turpis non libero tincidunt vehicula. Pellentesque sit amet posuere enim, in accumsan turpis.</p>
+                <hr>
+                <h4 class="tertiary-headers" id="ddi-price-formula">Formula Mark-Ups</h4>
+                <p>In hac habitasse platea dictumst. Suspendisse tempor blandit libero, at rhoncus leo dapibus in. Etiam semper, erat ac vehicula vulputate, magna nisi rhoncus orci, sed congue massa lectus id risus. In sagittis turpis non libero tincidunt vehicula.</p>
+                <hr>
+                <h4 class="tertiary-headers" id="ddi-price-dev">Deviated Pricing</h4>
+                <p>In imperdiet urna ac justo facilisis, in porttitor mauris tempus. Vivamus purus augue, hendrerit sit amet massa id, venenatis pharetra lectus. Mauris et tincidunt nisl. Etiam id tortor justo. Cras facilisis lorem non feugiat placerat. Donec volutpat gravida dapibus.</p>
+                <hr>
+                <h3 class="secondary-headers" id="ddi-inventory">Inventory</h3>
+                <p>Donec sit amet lectus ut metus tempor cursus. Nunc et vulputate libero. Praesent id porta mi, a sagittis neque. Aliquam eu pulvinar dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse et aliquam mauris. In vehicula pretium lacus, a auctor lectus feugiat quis.</p>
+                <hr>
+                <h2 class="main-headers" id="ddi-dashboard">Salesperson Dashboard</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a lacus a arcu dictum viverra. Vestibulum vitae pharetra sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse fringilla nec libero efficitur aliquam. Sed pellentesque, urna sit amet varius rhoncus, dui nulla ullamcorper sapien, id congue mi nulla eu sapien. Donec urna erat, dictum quis auctor in, commodo sed lectus. </p>
+                <hr>
+                <h3 class="secondary-headers" id="ddi-dash-quote">Using Quotes as a Pipeline</h3>
+                <p>Donec sit amet lectus ut metus tempor cursus. Nunc et vulputate libero. Praesent id porta mi, a sagittis neque. Aliquam eu pulvinar dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse et aliquam mauris. In vehicula pretium lacus, a auctor lectus feugiat quis.</p>
+                <hr>
+                <h3 class="secondary-headers" id="ddi-dash-backorder">Backorder Follow-Up</h3>
+                <p>Donec sit amet lectus ut metus tempor cursus. Nunc et vulputate libero.</p>
+            </section>
+            <section class="info-section" id="sales-i">
+                <h1 class="section-headers" id="sales-i">Sales-i</h1>
+                <h2 class="main-headers" id="sales-i-crm">CRM</h2>
+                <p>Donec sit amet lectus ut metus tempor cursus. Nunc et vulputate libero. Praesent id porta mi, a sagittis neque. Aliquam eu pulvinar dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse et aliquam mauris. In vehicula pretium lacus, a auctor lectus feugiat quis.</p>
+                <hr>
+                <h2 class="main-headers" id="sales-i-tracker">Goal Tracker</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a lacus a arcu dictum viverra. Vestibulum vitae pharetra sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse fringilla nec libero efficitur aliquam. Sed pellentesque, urna sit amet varius rhoncus, dui nulla ullamcorper sapien, id congue mi nulla eu sapien. Donec urna erat, dictum quis auctor in, commodo sed lectus.</p>
+                <hr>
+                <h2 class="main-headers" id="sales-i-review">Business Reviews</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a lacus a arcu dictum viverra. Vestibulum vitae pharetra sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse fringilla nec libero efficitur aliquam. Sed pellentesque, urna sit amet varius rhoncus, dui nulla ullamcorper sapien, id congue mi nulla eu sapien. Donec urna erat, dictum quis auctor in, commodo sed lectus.</p>
+                <hr>
+                <h2 class="main-headers" id="sales-i-gap">Gap Analysis</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a lacus a arcu dictum viverra. Vestibulum vitae pharetra sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse fringilla nec libero efficitur aliquam. Sed pellentesque, urna sit amet varius rhoncus, dui nulla ullamcorper sapien, id congue mi nulla eu sapien. Donec urna erat, dictum quis auctor in, commodo sed lectus.</p>
+                <hr>
+            </section>
+            <section class="info-section" id="blink">
+                <h1 class="section-headers" id="blink">Blink</h1>
+                <h2 class="main-headers" id="blink-doc">Document Repository</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a lacus a arcu dictum viverra. Vestibulum vitae pharetra sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse fringilla nec libero efficitur aliquam. Sed pellentesque, urna sit amet varius rhoncus, dui nulla ullamcorper sapien, id congue mi nulla eu sapien. Donec urna erat, dictum quis auctor in, commodo sed lectus.</p>
+                <hr>
+                <h2 class="main-headers" id="blink-support">DSR Support</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a lacus a arcu dictum viverra. Vestibulum vitae pharetra sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse fringilla nec libero efficitur aliquam. Sed pellentesque, urna sit amet varius rhoncus, dui nulla ullamcorper sapien, id congue mi nulla eu sapien. Donec urna erat, dictum quis auctor in, commodo sed lectus.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <!-- Site Map -->
+        <p>&copy; I. Janvey &amp; Sons, 2019</p>
+    </footer>
+</body>
+
+</html>

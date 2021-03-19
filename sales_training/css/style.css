@@ -1,0 +1,240 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+* {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    font-size: 16px;
+    background-color: aliceblue;
+    line-height: 2em;
+    font-family: 'PT Serif', serif;
+}
+
+main {
+    display: flex;
+}
+
+img {
+    border: thin solid black;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link {
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:active {}
+
+.header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header img {
+    padding: .2em;
+    vertical-align: middle;
+}
+
+.header h1 {
+    margin: 0 auto;
+    color: white;
+    font-family: 'Inconsolata', sans-serif;
+    letter-spacing: 2px;
+}
+
+.container.toc {
+    width: 25%;
+    height: 100%;
+    font-size: .8rem;
+    margin: 0;
+    padding: 20px 10px;
+    line-height: 25px;
+
+}
+
+.container.toc h2 {
+    margin: 10px;
+}
+
+.container {
+    margin: 25px;
+    padding: 15px;
+    width: 70%;
+    border: thin solid black;
+    background-color: white;
+}
+
+.container h2 {
+    margin: 25px;
+}
+
+.section-headers {
+    font-family: 'PT Serif', serif;
+}
+
+.main-headers {
+    color: black;
+}
+
+.secondary-headers {
+    color: darkslategray;
+}
+
+
+.table-of-contents h2 a {
+    color: darkslateblue;
+}
+
+section h2,
+section h3 {
+    margin: 10px;
+}
+
+section p {
+    padding: 15px;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+}
+
+
+#iamhere {
+    background-color: blue;
+    color: white;
+}
+
+#ddi-logo {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+}
+
+.mobile-nav {
+    margin: 0;
+    background-color: grey;
+    width: 100%;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.mobile-nav ul li {
+    margin: 10px;
+}
+
+.mobile-nav ul li a {
+    color: white;
+    letter-spacing: .2em;
+    padding: 15px 30px;
+    margin: 0 20px;
+}
+
+.mobile-nav ul li a:link {
+    font-weight: bold;
+}
+
+.mobile-nav ul a:active {
+    background: white;
+    color: black;
+}
+
+.mobile-nav label,
+#hamburger {
+    display: none;
+}
+
+#hamburger ul li a {
+    color: white;
+}
+
+.hamburger-nav {
+    display: none;
+}
+
+@media screen and (min-width: 1007px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1007px) {
+    .toc {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .mobile-nav {
+        display: none;
+    }
+    
+    .mobile-nav ul li {
+        margin: 10px;
+    }
+
+    .hamburger-nav { display: inline-block; }
+    .hamburger-nav label {
+        display: inline-block;
+        color: #fff;
+        background: ;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .hamburger-nav ul li {
+        display: block;
+        border-top: 1px solid #333;
+    }
+    
+    .hamburger-nav ul li a {
+        color: white;
+        margin-right: 10px;
+    }
+
+    /* Toggle show/hide menu on checkbox click */
+    .hamburger-nav ul {
+        display: none;
+    }
+
+    .hamburger-nav input:checked ~ ul {
+        display: block;
+    }
+}
