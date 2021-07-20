@@ -47,7 +47,9 @@ a:hover {
     font-weight: bold;
 }
 
-a:active {}
+a:active {
+    font-weight: bold;
+}
 
 .header {
     width: 100%;
