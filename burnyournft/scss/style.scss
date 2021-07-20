@@ -1,6 +1,10 @@
 /* Colors */
 $black: #171717;
 
+/* Spacing */
+$mypadding: .5em;
+$mymargin: 1em;
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
@@ -26,5 +30,15 @@ header {
     max-width: 100%;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    padding: $mypadding;
+    margin: 4em auto;
+    h1 {
+        font-size: 3em;
+    }
+}
 
   
